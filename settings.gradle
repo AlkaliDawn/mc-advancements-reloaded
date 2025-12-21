@@ -5,6 +5,7 @@ pluginManagement {
         maven { url "https://maven.neoforged.net/releases/" } // NeoForge Maven Repository
         maven { url "https://jitpack.io" } // JitPack Repository
         gradlePluginPortal() // Gradle Plugin Repository
+        mavenCentral()
     }
 }
 

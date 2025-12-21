@@ -40,7 +40,7 @@ public final class Memory {
    * Set the current selected tab ID. This is used to preserve the selected tab
    * during advancement reloads (e.g., when /reload command is run).
    *
-   * @param tabId the tab ID (ResourceLocation as string) to be saved, or null to clear
+   * @param tabId the tab ID (Identifier as string) to be saved, or null to clear
    */
   public static void setTabId(@Nullable final String tabId) {
     currentTabId = tabId;
@@ -50,7 +50,8 @@ public final class Memory {
    * Get the current selected tab ID. This is used to restore the selected tab
    * after advancement reloads.
    *
-   * @return the current selected tab ID (ResourceLocation as string), or null if none is saved
+   * @return the current selected tab ID (Identifier as string), or null if none
+   *         is saved
    */
   @Nullable
   public static String getTabId() {
